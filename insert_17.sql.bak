@@ -1,0 +1,177 @@
+-- RunCommand EG @C:\Users\uttam\OneDrive\Desktop\CSY1026\insert_17.sql
+
+-- for TABLE players
+
+INSERT INTO players 
+VALUES (seq_players.NEXTVAL, 'KHAGENDRA', 'CHEETRI', 'M', '074660002');
+
+INSERT INTO players
+VALUES (seq_players.NEXTVAL, 'UTTAM', 'THAKUR', 'M', '7431100282');
+
+INSERT INTO players
+VALUES (seq_players.NEXTVAL, 'SUMAN', 'ARYAL', 'F', '0778866029');
+
+INSERT INTO players
+VALUES (seq_players.NEXTVAL, 'JINGHAN', 'LIN', 'F', '0297745482');
+
+-- team ---using coloumn list 
+
+INSERT INTO team(team_id, team_name, team_leader)
+VALUES (seq_team.NEXTVAL, 'NOOB POWER', 'DAVID');
+
+INSERT INTO team(team_id, team_name, team_leader)
+VALUES (seq_team.NEXTVAL, 'DELTA', 'CARL');
+
+INSERT INTO team(team_id, team_name, team_leader)
+VALUES (seq_team.NEXTVAL, 'CREW X', 'MIKE');
+
+INSERT INTO team(team_id, team_name, team_leader)
+VALUES (seq_team.NEXTVAL, 'TERMINATOR', 'SUMAN');
+
+--FOR TABLE team_players
+INSERT INTO team_players
+VALUES (000001, 000001, 16);
+
+INSERT INTO team_players
+VALUES (000002, 000002, 8);
+
+INSERT INTO team_players
+VALUES (000002, 000003, 16);
+
+INSERT INTO team_players
+VALUES (000004, 000004, 8);
+
+--FOR TABLE categories
+
+INSERT INTO categories
+VALUES ('FPS', seq_categories.NEXTVAL, 15, 'FIRST PERSON SHOOTERS');
+
+INSERT INTO categories
+VALUES ('TPS', seq_categories.NEXTVAL, 10, 'THIRD PERSON SHOOTERS');
+
+INSERT INTO categories
+VALUES ('MOBA', seq_categories.NEXTVAL, 16, 'MULTIPLAYER ONLINE BATTLE ARENA');
+
+INSERT INTO categories
+VALUES ('RPG', seq_categories.NEXTVAL, 15, 'ROLE PLAY VIDEO GAMES');
+
+INSERT INTO categories
+VALUES ('FPS', seq_categories.NEXTVAL, 10, 'FIRST PERSON SHOOTERS');
+
+--FOR TABLE tournaments
+
+INSERT INTO tournaments
+VALUES (seq_tournaments.NEXTVAL, 000001, '20/MAY/2022', 'LEAGUE OF LEGEND');
+
+INSERT INTO tournaments
+VALUES (seq_tournaments.NEXTVAL, 000002, '10/JUN/2022', 'ESPORTS CHAMPIONSHIP');
+
+INSERT INTO tournaments
+VALUES (seq_tournaments.NEXTVAL, 000003, DEFAULT, 'PLATINUM AWARDS');
+
+INSERT INTO tournaments
+VALUES (seq_tournaments.NEXTVAL, 000004, '12/NOV/2022', 'THE INTERNATIONAL');
+
+
+--FOR TABLE sponsors
+
+INSERT INTO sponsors
+VALUES (seq_sponsors.NEXTVAL, 'SAMSUNG', 'BANNER');
+
+INSERT INTO sponsors
+VALUES (seq_sponsors.NEXTVAL, 'TENCENT', 'VIDEO');
+
+INSERT INTO sponsors
+VALUES (seq_sponsors.NEXTVAL, 'EA GAMES', 'SKIN');
+
+INSERT INTO sponsors
+VALUES (seq_sponsors.NEXTVAL, 'SONY INTERACTIVE', 'MUSIC');
+
+--FOR TABLE prizes
+
+INSERT INTO prizes
+VALUES (000001, 000001, 'lEAGUE CHAMPION');
+
+INSERT INTO prizes
+VALUES (000002, 000002, 'EA AWARDS');
+
+INSERT INTO prizes
+VALUES (000003, 000003, DEFAULT);
+
+INSERT INTO prizes
+VALUES (000004, 000004, 'BEST PLAYER OF 2022');
+
+--FOR TABLE tournament_participants
+
+INSERT INTO tournament_participants
+VALUES (seq_tournament_participants.NEXTVAL, 000001, 000001, 000001);
+
+INSERT INTO tournament_participants
+VALUES (seq_tournament_participants.NEXTVAL, 000002, 000002, 000002);
+
+INSERT INTO tournament_participants
+VALUES (seq_tournament_participants.NEXTVAL, 000003, 000003, 000003);
+
+INSERT INTO tournament_participants
+VALUES (seq_tournament_participants.NEXTVAL, 000004, 000004, 000004);
+
+--FOR TABLE rounds
+
+INSERT INTO rounds
+VALUES (seq_rounds.NEXTVAL, 02.20, 'THIS ROUND IS OF 2.20HOURS');
+
+INSERT INTO rounds
+VALUES (seq_rounds.NEXTVAL, 03.30, 'THIS ROUND IS OF 3.30HOURS');
+
+INSERT INTO rounds
+VALUES (seq_rounds.NEXTVAL, 01, 'THIS ROUND IS OF 1.00HOURS');
+
+INSERT INTO rounds
+VALUES (seq_rounds.NEXTVAL, 05.30, 'THIS ROUND IS OF 2.20HOURS');
+
+--FOR TABLE games
+
+INSERT INTO games
+VALUES (seq_games.NEXTVAL, 'PUBG', 000001);
+
+INSERT INTO games
+VALUES (seq_games.NEXTVAL, 'APEX GAME', 000002);
+
+INSERT INTO games
+VALUES (seq_games.NEXTVAL, 'COD', 000003);
+
+INSERT INTO games
+VALUES (seq_games.NEXTVAL, 'HITMAN', 000004);
+
+
+--FOR TABLE game_participants
+
+INSERT INTO game_participants
+VALUES (000001, 0000001 );
+
+INSERT INTO game_participants
+VALUES (000002, 000002);
+
+INSERT INTO game_participants
+VALUES (000003, 000003);
+
+INSERT INTO game_participants
+VALUES (000004, 000004);
+
+--FOR TABLE statistices
+
+INSERT INTO statistices
+VALUES (seq_statistices.NEXTVAL, 000001, 'NOOB POWER');
+
+INSERT INTO statistices
+VALUES (seq_statistices.NEXTVAL, 000002, 'TERMINATOR');
+
+INSERT INTO statistices
+VALUES (seq_statistices.NEXTVAL, 000003, 'CREW X');
+
+INSERT INTO statistices
+VALUES (seq_statistices.NEXTVAL, 000004, 'DELTA');
+
+
+
+
